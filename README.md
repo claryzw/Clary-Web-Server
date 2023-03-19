@@ -1,7 +1,7 @@
 # Clary-Simple-Web-Server-With-Go
 
 This project is a simple web server built with the Go programming language. The goal of this project is to gain experience with building web servers using Go and the net/http package.
-Features
+Features Include:
 
     Basic server that listens on a specific port and responds to incoming requests.
     Routing to handle different URL paths.
@@ -19,9 +19,9 @@ Built With
 
 ## Author
 
-    Clarence Itai Msindo - Initial work
+Clarence Itai Msindo - Initial work
 
 ## Acknowledgments
 
-    Go documentation
-    Inspiration from other open-source Go web servers.
+Go documentation
+Inspiration from other open-source Go web servers.
