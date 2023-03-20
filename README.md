@@ -2,7 +2,7 @@
 
 This project is a simple web server built with the Go programming language. The goal of this project is to gain experience with building web servers using Go and the net/http package.
 
-##Features
+## Features
 
 * Basic server that listens on a specific port and responds to incoming requests.
 * Routing to handle different URL paths.
