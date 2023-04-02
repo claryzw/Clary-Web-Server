@@ -29,7 +29,7 @@ This project includes the following files:
 
 ## Frameworks
 
-This project does not use any external web frameworks, but it's worth noting that there are popular web frameworks such as Gin, Echo, and Revel that are built on top of the net/http package and abstract some of the low-level details of the package to make it easy to build web applications.
+This project does not use any external web frameworks.
 
 ## Built With:
 
