@@ -29,8 +29,9 @@ This project includes the following files:
 
 ## Frameworks
 
-This project also uses popular web frameworks such as Gin, Echo, Revel etc. that are built on top of net/http package and abstract some of the low-level details of the package and make it easy to build web applications.
-Built With:
+This project does not use any external web frameworks, but it's worth noting that there are popular web frameworks such as Gin, Echo, and Revel that are built on top of the net/http package and abstract some of the low-level details of the package to make it easy to build web applications.
+
+## Built With:
 
 * Go - The programming language used
 * net/http - Go's built-in package for building HTTP servers
@@ -38,6 +39,6 @@ Built With:
 
 ## Acknowledgments
 
-Go documentation
+* Go documentation
 
-Inspiration from other open-source Go web servers.
+* Inspiration from other open-source Go web servers.
