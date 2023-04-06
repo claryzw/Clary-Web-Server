@@ -6,9 +6,9 @@ import "net/http"
 
 
 func rootHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Hello, World!")
+	fmt.Fprint(w, "Simple, Web Server!")
 }
 
 func aboutHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "This is an example web server built with Go.")
+	fmt.Fprint(w, "This is an simple web server built with Go by Clarence Itai Msindo.")
 }
