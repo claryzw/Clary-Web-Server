@@ -4,14 +4,18 @@ package main
 //The imports for the web server
 import "fmt"
 import "net/http"
+import "log"
 
 // The functions for the web server
 func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprint(w, "Clary's Web Server!")
-	})
+
+	// Initialize routes
+	initilizeRoutes()
+	
+	// Start server with better handling
+	fmt.Println("Server strating on http://localhost:8080")
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
-		fmt.Println(err)
+		log.fatalf("Server failed to start: %v", err)
 	}
 }
