@@ -4,8 +4,8 @@ package main
 import "fmt"
 import "net/http"
 
-
 func initializeRoutes() {
-	http.HandleFunc("/", rootHandler)
-	http.HandleFunc("/about", aboutHandler)
+	http.HandleFunc("/", loggingMiddleware(rootHandler))
+	http.HandleFunc("/about", loggingMiddleware(aboutHandler))
+	http.HandleFunc("/api", loggingMiddleware(apiHandler))
 }
