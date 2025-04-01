@@ -10,12 +10,12 @@ import "log"
 func main() {
 
 	// Initialize routes
-	initilizeRoutes()
+	initializeRoutes()
 	
 	// Start server with better handling
 	fmt.Println("Server strating on http://localhost:8080")
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
-		log.fatalf("Server failed to start: %v", err)
+		log.Fatalf("Server failed to start: %v", err)
 	}
 }
