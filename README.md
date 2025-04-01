@@ -4,28 +4,36 @@ This project is a simple web server built with the Go programming language. The 
 
 ## Features
 
-* Basic server that listens on a specific port and responds to incoming requests.
-* Routing to handle different URL paths.
-* Handling different HTTP methods like GET, POST, PUT, DELETE etc.
-* Handling different types of requests like JSON, XML etc.
+- **Clean Architecture**: Separation of concerns with routes, handlers, and middleware
+- **RESTful API**: JSON response endpoints with proper status codes
+- **Middleware Support**: Request logging with timing information
+- **Error Handling**: Proper HTTP error responses
 
 ## Getting Started
-
 To run the web server, you will need to have Go installed on your computer. You can download and install the latest version of Go from the official Go website.
 
-Once you have Go installed, you can run the web server using the following command:
+### Prerequisites
+- Go 1.16 or higher
+- Visual Studio Code (recommended)
 
-    go run main.go
+### Installation & Running the Server
 
-This will start the web server on port 8080. You can visit the web server in your web browser by navigating to http://localhost:8080.
+1. Git clone https://github.com/claryzw/Clary-Web-Server.git
+2. Navigate to the project directory in Visual Studio Code
+3. Open the terminal in VS Code (Terminal > New Terminal) and run:
+   ```
+   go run main.go routes.go handler.go
+
+   ```
+4. The server is now running and accessible at http://localhost:8080
 
 ## File Directory
 
 This project includes the following files:
 
 * main.go - The main file that initializes and starts the server.
-* routes.go - Defines the routes and handling of HTTP requests.
-* handler.go - Handles specific requests.
+* routes.go - Defines the routes and handling of HTTP requests with middleware.
+* handler.go - Handles specific requests and middleware implementation.
 
 ## Frameworks
 
