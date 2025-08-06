@@ -20,7 +20,7 @@ func rootHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if r.Method != hrrp.MethodGet {
+	if r.Method != http.MethodGet {
 		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
 		return
 	}
@@ -57,4 +57,5 @@ func loggingMiddleware(next http.HandlerFunc) http.HandlerFunc {
         fmt.Printf("[%s] Completed in %v\n", time.Now().Format(time.RFC3339), time.Since(start))
     }
 }
+
 
