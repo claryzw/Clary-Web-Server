@@ -10,7 +10,7 @@ import "time"
 type Response struct { 
 	Message string `json:"message"`
  	Status int `json:"status"`
-	Time time.Time `jason:"timestamp"`
+	Time time.Time `json:"timestamp"`
 }
 	
 func rootHandler(w http.ResponseWriter, r *http.Request) {
@@ -57,3 +57,4 @@ func loggingMiddleware(next http.HandlerFunc) http.HandlerFunc {
         fmt.Printf("[%s] Completed in %v\n", time.Now().Format(time.RFC3339), time.Since(start))
     }
 }
+
