@@ -13,9 +13,10 @@ func main() {
 	initializeRoutes()
 	
 	// Start server with better handling
-	fmt.Println("Server strating on http://localhost:8080")
+	fmt.Println("Server starting on http://localhost:8080")
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		log.Fatalf("Server failed to start: %v", err)
 	}
 }
+
